@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"9ef755f8-440e-4494-91fe-444eda90ced3",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>com.tests.postRequest.postRequestReadingFile</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-01-16 09:47:54 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Echo JSON via httpbin</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:22]"><span>[2:22]</span> <span>To get the data in xml format and validate from file</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">com/tests/postRequest/postRequestReadingFile.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Demonstrate POST requests with JSON and XML by reading file</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Echo JSON via httpbin</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2568</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://httpbin.org/post&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">88</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:com/tests/jsonXmlFolder/JsonResponse2.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">158</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers { &#39;Content-Type&#39;: &#39;application/json&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2251</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">09:47:51.245 request:
+1 &gt; POST https://httpbin.org/post
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 33
+1 &gt; Host: httpbin.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.29)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;joshua&quot;,&quot;role&quot;:&quot;tester&quot;}
+
+09:47:52.891 response time in milliseconds: 1646
+1 &lt; 200
+1 &lt; Date: Fri, 16 Jan 2026 09:47:52 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 537
+1 &lt; Connection: keep-alive
+1 &lt; Server: gunicorn/19.9.0
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+{
+  &quot;args&quot;: {}, 
+  &quot;data&quot;: &quot;{\&quot;name\&quot;:\&quot;joshua\&quot;,\&quot;role\&quot;:\&quot;tester\&quot;}&quot;, 
+  &quot;files&quot;: {}, 
+  &quot;form&quot;: {}, 
+  &quot;headers&quot;: {
+    &quot;Accept-Encoding&quot;: &quot;gzip,deflate&quot;, 
+    &quot;Content-Length&quot;: &quot;33&quot;, 
+    &quot;Content-Type&quot;: &quot;application/json; charset=UTF-8&quot;, 
+    &quot;Host&quot;: &quot;httpbin.org&quot;, 
+    &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.14 (Java/11.0.29)&quot;, 
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696a0948-2e362f3c37481a16432beefa&quot;
+  }, 
+  &quot;json&quot;: {
+    &quot;name&quot;: &quot;joshua&quot;, 
+    &quot;role&quot;: &quot;tester&quot;
+  }, 
+  &quot;origin&quot;: &quot;197.211.63.113&quot;, 
+  &quot;url&quot;: &quot;https://httpbin.org/post&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &#39;JSON Response:&#39;, response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">09:47:52.923 [print] JSON Response: {
+  &quot;args&quot;: {
+  },
+  &quot;data&quot;: &quot;{\&quot;name\&quot;:\&quot;joshua\&quot;,\&quot;role\&quot;:\&quot;tester\&quot;}&quot;,
+  &quot;files&quot;: {
+  },
+  &quot;form&quot;: {
+  },
+  &quot;headers&quot;: {
+    &quot;Accept-Encoding&quot;: &quot;gzip,deflate&quot;,
+    &quot;Content-Length&quot;: &quot;33&quot;,
+    &quot;Content-Type&quot;: &quot;application/json; charset=UTF-8&quot;,
+    &quot;Host&quot;: &quot;httpbin.org&quot;,
+    &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.14 (Java/11.0.29)&quot;,
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696a0948-2e362f3c37481a16432beefa&quot;
+  },
+  &quot;json&quot;: {
+    &quot;name&quot;: &quot;joshua&quot;,
+    &quot;role&quot;: &quot;tester&quot;
+  },
+  &quot;origin&quot;: &quot;197.211.63.113&quot;,
+  &quot;url&quot;: &quot;https://httpbin.org/post&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Verify response JSON</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.json contains deep { &quot;name&quot;: &quot;joshua&quot;, &quot;role&quot;: &quot;tester&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.json.name == &#39;joshua&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.json.role == &#39;tester&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:22]</span>
+                <span class="scenario-name">To get the data in xml format and validate from file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1158</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://httpbin.org/post&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body = read(&#39;classpath:com/tests/jsonXmlFolder/XmlResponse.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">55</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/xml&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1089</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">09:47:53.126 request:
+1 &gt; POST https://httpbin.org/post
+1 &gt; Accept: application/xml
+1 &gt; Content-Type: application/xml; charset=UTF-8
+1 &gt; Content-Length: 130
+1 &gt; Host: httpbin.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.29)
+1 &gt; Accept-Encoding: gzip,deflate
+&lt;note&gt;
+  &lt;to&gt;Tove&lt;/to&gt;
+  &lt;from&gt;Jani&lt;/from&gt;
+  &lt;heading&gt;Reminder&lt;/heading&gt;
+  &lt;body&gt;Don&#39;t forget me this weekend!&lt;/body&gt;
+&lt;/note&gt;
+
+09:47:54.111 response time in milliseconds: 985
+1 &lt; 200
+1 &lt; Date: Fri, 16 Jan 2026 09:47:53 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 625
+1 &lt; Connection: keep-alive
+1 &lt; Server: gunicorn/19.9.0
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+{
+  &quot;args&quot;: {}, 
+  &quot;data&quot;: &quot;&lt;note&gt;\r\n  &lt;to&gt;Tove&lt;/to&gt;\r\n  &lt;from&gt;Jani&lt;/from&gt;\r\n  &lt;heading&gt;Reminder&lt;/heading&gt;\r\n  &lt;body&gt;Don&#39;t forget me this weekend!&lt;/body&gt;\r\n&lt;/note&gt;&quot;, 
+  &quot;files&quot;: {}, 
+  &quot;form&quot;: {}, 
+  &quot;headers&quot;: {
+    &quot;Accept&quot;: &quot;application/xml&quot;, 
+    &quot;Accept-Encoding&quot;: &quot;gzip,deflate&quot;, 
+    &quot;Content-Length&quot;: &quot;130&quot;, 
+    &quot;Content-Type&quot;: &quot;application/xml; charset=UTF-8&quot;, 
+    &quot;Host&quot;: &quot;httpbin.org&quot;, 
+    &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.14 (Java/11.0.29)&quot;, 
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696a0949-24d4620a5cd206f73c9fdc61&quot;
+  }, 
+  &quot;json&quot;: null, 
+  &quot;origin&quot;: &quot;197.211.63.113&quot;, 
+  &quot;url&quot;: &quot;https://httpbin.org/post&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &quot;from xml file ==&gt; &quot;, body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">09:47:54.121 [print] from xml file ==&gt;  &lt;note&gt;
+  &lt;to&gt;Tove&lt;/to&gt;
+  &lt;from&gt;Jani&lt;/from&gt;
+  &lt;heading&gt;Reminder&lt;/heading&gt;
+  &lt;body&gt;Don&#39;t forget me this weekend!&lt;/body&gt;
+&lt;/note&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &quot;response ==&gt; &quot;, response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">09:47:54.125 [print] response ==&gt;  {
+  &quot;args&quot;: {
+  },
+  &quot;data&quot;: &quot;&lt;note&gt;\r\n  &lt;to&gt;Tove&lt;/to&gt;\r\n  &lt;from&gt;Jani&lt;/from&gt;\r\n  &lt;heading&gt;Reminder&lt;/heading&gt;\r\n  &lt;body&gt;Don&#39;t forget me this weekend!&lt;/body&gt;\r\n&lt;/note&gt;&quot;,
+  &quot;files&quot;: {
+  },
+  &quot;form&quot;: {
+  },
+  &quot;headers&quot;: {
+    &quot;Accept&quot;: &quot;application/xml&quot;,
+    &quot;Accept-Encoding&quot;: &quot;gzip,deflate&quot;,
+    &quot;Content-Length&quot;: &quot;130&quot;,
+    &quot;Content-Type&quot;: &quot;application/xml; charset=UTF-8&quot;,
+    &quot;Host&quot;: &quot;httpbin.org&quot;,
+    &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.14 (Java/11.0.29)&quot;,
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696a0949-24d4620a5cd206f73c9fdc61&quot;
+  },
+  &quot;json&quot;: null,
+  &quot;origin&quot;: &quot;197.211.63.113&quot;,
+  &quot;url&quot;: &quot;https://httpbin.org/post&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

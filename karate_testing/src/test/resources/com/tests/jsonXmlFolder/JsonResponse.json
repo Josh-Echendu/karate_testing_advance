@@ -1,0 +1,16 @@
+{
+    "reference": "Genesis 1:1",
+    "verses": [
+        {
+        "book_id": "GEN",
+        "book_name": "Genesis",
+        "chapter": 1,
+        "verse": 1,
+        "text": "In the beginning, God created the heavens and the earth.\n"
+        }
+    ],
+    "text": "In the beginning, God created the heavens and the earth.\n",
+    "translation_id": "web",
+    "translation_name": "World English Bible",
+    "translation_note": "Public Domain"
+}
