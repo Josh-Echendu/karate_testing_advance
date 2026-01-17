@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-01-17 10:55:57 AM</div>
+    <div>2026-01-17 11:04:33 AM</div>
   </div>
 </div>
 
@@ -57,8 +57,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div class="nav-item passed">
             <a href="#[1:3]"><span>[1:3]</span> <span>To create job entry in Json format using embeded expression</span></a>
           </div>
-          <div class="nav-item failed">
-            <a href="#[2:14]"><span>[2:14]</span> <span>To create job entry in XML format using embeded expression</span></a>
+          <div class="nav-item passed">
+            <a href="#[2:14]"><span>[2:14]</span> <span>To create job entry in XML format using embedded expression</span></a>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2915</span>
+              <span>ms:</span>&nbsp;<span>4581</span>
             </div>
           </div>
           
@@ -101,7 +101,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &#39;https://httpbin.org/post&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">100</div>
+    <div class="time-cell passed">147</div>
   </div>
 
    
@@ -129,7 +129,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def role = &#39;web developer&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -157,7 +157,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def getRandomValue = function(){ return Math.floor(100 * Math.random()) }</span>
       </div>
     </div>
-    <div class="time-cell passed">43</div>
+    <div class="time-cell passed">64</div>
   </div>
 
    
@@ -185,7 +185,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { &quot;name&quot;: &quot;#(getRandomValue())&quot;, &quot;role&quot;: &quot;#(role)&quot; }</span>
       </div>
     </div>
-    <div class="time-cell passed">109</div>
+    <div class="time-cell passed">135</div>
   </div>
 
    
@@ -213,7 +213,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2573</div>
+    <div class="time-cell passed">4072</div>
   </div>
 
    
@@ -222,7 +222,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">10:55:53.739 request:
+  <div class="preformatted" data-parent="0.8">11:04:28.036 request:
 1 &gt; POST https://httpbin.org/post
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 34
@@ -230,11 +230,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.29)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:54,&quot;role&quot;:&quot;web developer&quot;}
+{&quot;name&quot;:63,&quot;role&quot;:&quot;web developer&quot;}
 
-10:55:55.487 response time in milliseconds: 1728
+11:04:31.149 response time in milliseconds: 3105
 1 &lt; 200
-1 &lt; Date: Sat, 17 Jan 2026 10:55:55 GMT
+1 &lt; Date: Sat, 17 Jan 2026 11:04:30 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Content-Length: 537
 1 &lt; Connection: keep-alive
@@ -243,7 +243,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Access-Control-Allow-Credentials: true
 {
   &quot;args&quot;: {}, 
-  &quot;data&quot;: &quot;{\&quot;name\&quot;:54,\&quot;role\&quot;:\&quot;web developer\&quot;}&quot;, 
+  &quot;data&quot;: &quot;{\&quot;name\&quot;:63,\&quot;role\&quot;:\&quot;web developer\&quot;}&quot;, 
   &quot;files&quot;: {}, 
   &quot;form&quot;: {}, 
   &quot;headers&quot;: {
@@ -252,10 +252,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     &quot;Content-Type&quot;: &quot;application/json; charset=UTF-8&quot;, 
     &quot;Host&quot;: &quot;httpbin.org&quot;, 
     &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.14 (Java/11.0.29)&quot;, 
-    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696b6abb-6cac0c1970d26847116b8fdc&quot;
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696b6cbe-5eb85c401b3d41440610dc1b&quot;
   }, 
   &quot;json&quot;: {
-    &quot;name&quot;: 54, 
+    &quot;name&quot;: 63, 
     &quot;role&quot;: &quot;web developer&quot;
   }, 
   &quot;origin&quot;: &quot;185.183.34.151&quot;, 
@@ -310,7 +310,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &#39;response =&gt; &#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">75</div>
   </div>
 
    
@@ -319,10 +319,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.10">10:55:55.545 [print] response =&gt;  {
+  <div class="preformatted" data-parent="0.10">11:04:31.227 [print] response =&gt;  {
   &quot;args&quot;: {
   },
-  &quot;data&quot;: &quot;{\&quot;name\&quot;:54,\&quot;role\&quot;:\&quot;web developer\&quot;}&quot;,
+  &quot;data&quot;: &quot;{\&quot;name\&quot;:63,\&quot;role\&quot;:\&quot;web developer\&quot;}&quot;,
   &quot;files&quot;: {
   },
   &quot;form&quot;: {
@@ -333,10 +333,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     &quot;Content-Type&quot;: &quot;application/json; charset=UTF-8&quot;,
     &quot;Host&quot;: &quot;httpbin.org&quot;,
     &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.14 (Java/11.0.29)&quot;,
-    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696b6abb-6cac0c1970d26847116b8fdc&quot;
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696b6cbe-5eb85c401b3d41440610dc1b&quot;
   },
   &quot;json&quot;: {
-    &quot;name&quot;: 54,
+    &quot;name&quot;: 63,
     &quot;role&quot;: &quot;web developer&quot;
   },
   &quot;origin&quot;: &quot;185.183.34.151&quot;,
@@ -362,7 +362,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.json.role == &#39;web developer&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">33</div>
+    <div class="time-cell passed">84</div>
   </div>
 
    
@@ -386,12 +386,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[2:14]</span>
-                <span class="scenario-name">To create job entry in XML format using embeded expression</span>
+                <span class="scenario-name">To create job entry in XML format using embedded expression</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1618</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2167</span>
             </div>
           </div>
           
@@ -405,10 +405,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;https://httpbin.org/post&#39;</span>
+        <span>Given</span>&nbsp;<span>url &#39;https://httpbin.org/post&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -436,7 +436,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def name = &quot;Joshua&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -461,10 +461,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">17</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def getRandomValue = function() { return Math.floor(100 * Math.random()); }</span>
+        <span>*</span>&nbsp;<span>def getRandomValue = function() { return Math.floor(100 * Math.random()) }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -492,7 +492,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request</span>
       </div>
     </div>
-    <div class="time-cell passed">75</div>
+    <div class="time-cell passed">123</div>
   </div>
 
    
@@ -526,7 +526,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>header Accept = &#39;application/xml&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -554,7 +554,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1445</div>
+    <div class="time-cell passed">2021</div>
   </div>
 
    
@@ -563,44 +563,44 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.29">10:55:55.761 request:
+  <div class="preformatted" data-parent="0.29">11:04:31.642 request:
 1 &gt; POST https://httpbin.org/post
 1 &gt; Accept: application/xml
 1 &gt; Content-Type: application/xml; charset=UTF-8
-1 &gt; Content-Length: 138
+1 &gt; Content-Length: 137
 1 &gt; Host: httpbin.org
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.29)
 1 &gt; Accept-Encoding: gzip,deflate
 &lt;note&gt;
     &lt;to&gt;Joshua&lt;/to&gt;
-    &lt;from&gt;48&lt;/from&gt;
+    &lt;from&gt;4&lt;/from&gt;
     &lt;heading&gt;Reminder&lt;/heading&gt;
     &lt;body&gt;Don&#39;t forget me this weekend!&lt;/body&gt;
 &lt;/note&gt;
 
-10:55:57.113 response time in milliseconds: 1349
+11:04:33.497 response time in milliseconds: 1851
 1 &lt; 200
-1 &lt; Date: Sat, 17 Jan 2026 10:55:56 GMT
+1 &lt; Date: Sat, 17 Jan 2026 11:04:33 GMT
 1 &lt; Content-Type: application/json
-1 &lt; Content-Length: 633
+1 &lt; Content-Length: 632
 1 &lt; Connection: keep-alive
 1 &lt; Server: gunicorn/19.9.0
 1 &lt; Access-Control-Allow-Origin: *
 1 &lt; Access-Control-Allow-Credentials: true
 {
   &quot;args&quot;: {}, 
-  &quot;data&quot;: &quot;&lt;note&gt;\r\n    &lt;to&gt;Joshua&lt;/to&gt;\r\n    &lt;from&gt;48&lt;/from&gt;\r\n    &lt;heading&gt;Reminder&lt;/heading&gt;\r\n    &lt;body&gt;Don&#39;t forget me this weekend!&lt;/body&gt;\r\n&lt;/note&gt;&quot;, 
+  &quot;data&quot;: &quot;&lt;note&gt;\r\n    &lt;to&gt;Joshua&lt;/to&gt;\r\n    &lt;from&gt;4&lt;/from&gt;\r\n    &lt;heading&gt;Reminder&lt;/heading&gt;\r\n    &lt;body&gt;Don&#39;t forget me this weekend!&lt;/body&gt;\r\n&lt;/note&gt;&quot;, 
   &quot;files&quot;: {}, 
   &quot;form&quot;: {}, 
   &quot;headers&quot;: {
     &quot;Accept&quot;: &quot;application/xml&quot;, 
     &quot;Accept-Encoding&quot;: &quot;gzip,deflate&quot;, 
-    &quot;Content-Length&quot;: &quot;138&quot;, 
+    &quot;Content-Length&quot;: &quot;137&quot;, 
     &quot;Content-Type&quot;: &quot;application/xml; charset=UTF-8&quot;, 
     &quot;Host&quot;: &quot;httpbin.org&quot;, 
     &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.14 (Java/11.0.29)&quot;, 
-    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696b6abc-1d073c5403d11dec1f68161e&quot;
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696b6cc0-296281757796fcb0160a8028&quot;
   }, 
   &quot;json&quot;: null, 
   &quot;origin&quot;: &quot;185.183.34.151&quot;, 
@@ -655,7 +655,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &quot;response ==&gt; &quot;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -664,10 +664,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.31">10:55:57.124 [print] response ==&gt;  {
+  <div class="preformatted" data-parent="0.31">11:04:33.511 [print] response ==&gt;  {
   &quot;args&quot;: {
   },
-  &quot;data&quot;: &quot;&lt;note&gt;\r\n    &lt;to&gt;Joshua&lt;/to&gt;\r\n    &lt;from&gt;48&lt;/from&gt;\r\n    &lt;heading&gt;Reminder&lt;/heading&gt;\r\n    &lt;body&gt;Don&#39;t forget me this weekend!&lt;/body&gt;\r\n&lt;/note&gt;&quot;,
+  &quot;data&quot;: &quot;&lt;note&gt;\r\n    &lt;to&gt;Joshua&lt;/to&gt;\r\n    &lt;from&gt;4&lt;/from&gt;\r\n    &lt;heading&gt;Reminder&lt;/heading&gt;\r\n    &lt;body&gt;Don&#39;t forget me this weekend!&lt;/body&gt;\r\n&lt;/note&gt;&quot;,
   &quot;files&quot;: {
   },
   &quot;form&quot;: {
@@ -675,11 +675,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   &quot;headers&quot;: {
     &quot;Accept&quot;: &quot;application/xml&quot;,
     &quot;Accept-Encoding&quot;: &quot;gzip,deflate&quot;,
-    &quot;Content-Length&quot;: &quot;138&quot;,
+    &quot;Content-Length&quot;: &quot;137&quot;,
     &quot;Content-Type&quot;: &quot;application/xml; charset=UTF-8&quot;,
     &quot;Host&quot;: &quot;httpbin.org&quot;,
     &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.14 (Java/11.0.29)&quot;,
-    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696b6abc-1d073c5403d11dec1f68161e&quot;
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-696b6cc0-296281757796fcb0160a8028&quot;
   },
   &quot;json&quot;: null,
   &quot;origin&quot;: &quot;185.183.34.151&quot;,
@@ -699,13 +699,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.32">
-      <div class="step-ref failed">32</div>
+      <div class="step-ref passed">32</div>
       
-      <div class="step-cell failed">
-        <span>And</span>&nbsp;<span>match response.data contains &quot;&quot;&quot;&lt;to&gt;joshua&lt;/to&gt;&quot;&quot;&quot;</span>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data contains &quot;&lt;to&gt;Joshua&lt;/to&gt;&quot;</span>
       </div>
     </div>
-    <div class="time-cell failed">88</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -714,26 +714,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.32">10:55:57.235 classpath:com/tests/postRequest/embededExpression.feature:32
-And match response.data contains &quot;&quot;&quot;&lt;to&gt;joshua&lt;/to&gt;&quot;&quot;&quot;
-js failed:
-&gt;&gt;&gt;&gt;
-01: &quot;&quot;&quot;&lt;to&gt;joshua&lt;/to&gt;&quot;&quot;&quot;
-&lt;&lt;&lt;&lt;
-org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:3 Expected ; but found &lt;to&gt;joshua&lt;/to&gt;
-&quot;&quot;&quot;&lt;to&gt;joshua&lt;/to&gt;&quot;&quot;&quot;
-   ^
-
-- org.graalvm.polyglot.Context.eval(Context.java:425)
-- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
-- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
-- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
-- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2238)
-- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1841)
-- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:182)
-
-classpath:com/tests/postRequest/embededExpression.feature:32
-</div>   
+     
 
   
 
