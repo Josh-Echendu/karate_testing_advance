@@ -40,10 +40,24 @@ class RunnerTest {
 
     // }
 
-    @Karate.Test
-    Karate runTestUsingClassPath4() {
+    // @Karate.Test
+    // Karate runTestUsingClassPath4() {
 
-        return Karate.run("classpath:com/tests/postRequest/postRequestReadingFile.feature");
+    //     return Karate.run("classpath:com/tests/postRequest/postRequestReadingFile.feature");
+
+    // }
+    
+    // @Karate.Test
+    // Karate runTestUsingClassPath5() {
+
+    //     return Karate.run("classpath:com/tests/postRequest/javaScriptExecutor.feature");
+
+    // }
+
+    @Karate.Test
+    Karate runTestUsingClassPath6() {
+
+        return Karate.run("classpath:com/tests/postRequest/embededExpression.feature");
 
     }
 
